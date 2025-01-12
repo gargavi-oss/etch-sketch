@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch A Sketch</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: #f0f0f0;
+            flex-direction: column;
+            background-color: #fff;
+        }
+        .box {
+            box-sizing: border-box;
+            background-color: #fff;
+            transition: background-color 0.3s, opacity 0.3s;
+        }
+        #container {
+            margin-top: 5px;
+            border: 2px solid black;
+            width: 640px;
+            height: 640px;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+     #button
+     {
+        padding: 8px 16px;
+        margin-top: 20px;
+        border: none;
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+     }
+     #buttons {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        
+     }
+     #button:hover {
+  background-color: #45a049;
+}
+     footer{
+        background-color: #f9f9f9;
+        padding: 20px;
+        text-align: center;
+        color: #555;
+        margin-top: 20px;
+        width: 100%;
+        font-size: 1rem;
+     }
+     footer a {
+        text-decoration: none;
+     }
+     footer a:hover{
+        text-decoration: underline;
+     }
+    </style>
+</head>
+<body>
+   <header><h1>Etch a Sketch</h1></header>
+  <main>
+    <div id="container"></div>
+    <div id="buttons">
+        <button id="button" class="resize-button">Resize Grid</button>
+        <button id="button" class="random-color">Random Color</button>
+        <button id="button" class="black-color">Black Color</button>
+        <button id="button" class="reset">Reset</button>
+    </div>
+  </main> 
+  <footer>
+  
+        Created by <a href="https://github.com/gargavi-oss">gargavi-oss</a>
+  
+  </footer>
+</body>
+</html>
